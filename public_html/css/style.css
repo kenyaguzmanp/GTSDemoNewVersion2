@@ -323,6 +323,7 @@ nav .container-fluid{
     padding-bottom: 40px;
 }
 
+
 .contact-cont, .footContact{
     width: 100%;
     float: left;
@@ -349,12 +350,28 @@ nav .container-fluid{
     width: 23%;
 }
 
+.contactColumn1 img{
+    max-width: 24px;
+}
+
 .contactColumn{
     width: 16%;
 }
 
 .contactColumn2{
     width: 30%;
+}
+
+.contactColumn2 img{
+    max-width: 20px;
+}
+
+#phoneIcon{
+    max-width: 23px;
+}
+
+#faxIcon{
+    max-width: 20px;
 }
 
 .contact-us p{
@@ -398,6 +415,10 @@ body > div {
         font-size: 1.2vw;
         margin-top: 20px;
         padding: 3px 3px;
+    }
+    
+    .dropdown-menu>li>a {
+    font-size: 1.2vw;
     }
 
     
