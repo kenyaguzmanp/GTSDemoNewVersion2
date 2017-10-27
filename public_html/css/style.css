@@ -403,6 +403,14 @@ body > div {
     padding-right: 0px;
 }
 
+.leaderSection{
+    background-color: white;
+}
+
+.photoLeadership img{
+    width:100%;
+}
+
 
 /* **************************************************************************************/
 /*   RESPONSIVE */
