@@ -403,12 +403,46 @@ body > div {
     padding-right: 0px;
 }
 
-.leaderSection{
+
+/*  LEADERSHIP PAGE */
+.leaderSection, .leaders{
     background-color: white;
 }
 
 .photoLeadership img{
     width:100%;
+}
+
+.leaders h3{
+    font-weight: bold;
+}
+
+.leaders h3, .leaders h4{
+    text-align: center;
+}
+
+#mary{
+    font-size: 12px;
+}
+
+.sections{
+    color: #1b4a67;
+}
+
+.whoWeAreFull{
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+#whoWeAreWrapp{
+    background-size: 86%;
+    background-image: url(leadership_03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#leadershipTitle{
+    padding-left: 160px
 }
 
 
@@ -508,7 +542,14 @@ body > div {
 
     }
     
-
+    .whoWeAreFull{
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+    
+    #leadershipTitle{
+    padding-left: 60px
+    }
 }
 
 
