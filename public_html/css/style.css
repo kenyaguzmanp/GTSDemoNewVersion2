@@ -124,6 +124,12 @@ nav .container-fluid{
     background-color: white;
 }
 
+#articleNewsButton:hover{
+    color: #337ab7;
+    border-bottom-style: solid;
+    background-color: white;
+}
+
 
 .dropdown-menu>li>a:hover{
     color: #337ab7;
@@ -212,6 +218,11 @@ nav .container-fluid{
     padding-left: 0px;
 }
 
+.wh-re-right{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .wh-re{
     width: 100%;
 }
@@ -228,6 +239,15 @@ nav .container-fluid{
 }
 
 #whoWeAreButton{
+    color: #1b4a67;
+    font-family: 'Allerta';
+    border-radius: 0px;
+    border-color: #2c6cb7;
+}
+
+#articleNewsButton{
+    color: #1b4a67;
+    font-family: 'Allerta';
     border-radius: 0px;
     border-color: #2c6cb7;
 }
@@ -284,13 +304,15 @@ nav .container-fluid{
 }
 
 .news .thumbnail h3{
+    color: #1b4a67;
     margin-top: 10px;
     font-size: 14px;
 }
 
 .news .thumbnail p{
+    color: #1b4a67;
     font-size: 12px;
-    text-align: justify;
+/*    text-align: justify;*/
 }
 
 .carousel3inner{
@@ -380,7 +402,7 @@ nav .container-fluid{
 }
 
 .contact-us p{
-    font-size: 11px;
+    font-size: 10px;
     margin-bottom: 0px;
 }
 
@@ -512,7 +534,7 @@ body > div {
 
 
     .news, .who-are, .contact-us {
-        padding: 10px; 
+        padding: 30px; 
     }
 
     .footText{
@@ -564,6 +586,14 @@ body > div {
     
     #whoWeAreTitle{
     padding-bottom: 10px;
+    }
+    
+    .contactColumn1, .contactColumn, .contactColumn2 {
+    width: 100%;
+    }
+    
+    #whoWeAreButton, #articleNewsButton{
+    font-size: 11px;
     }
 }
 
