@@ -118,6 +118,11 @@ nav .container-fluid{
     background-color: white;
 }
 
+#whoWeAreButton:hover{
+    color: #337ab7;
+    border-bottom-style: solid;
+    background-color: white;
+}
 
 
 .dropdown-menu>li>a:hover{
@@ -196,7 +201,7 @@ nav .container-fluid{
 .who-are{
     background-color: white;
     text-align: justify;
-    padding: 30px 70px 50px 70px;
+    padding: 50px 70px 50px 70px;
 }
 
 .wh-re.container-fluid{
