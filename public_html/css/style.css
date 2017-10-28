@@ -14,9 +14,8 @@ p{
 
 
 #all-content{
-/*    font-family: 'Allerta';*/
+    font-family: 'Allerta';
     margin-top: 111px;
-    /*    margin-top: 157px;*/
 }
 
 h2, h3{
@@ -31,8 +30,6 @@ h2, h3{
     padding: 0px 30px 20px 30px;
     font-size: 14px;
     background-color: white;
-    /*padding-bottom: 20px;   
-    padding-top: 34px;*/
     text-transform: uppercase;
 }
 
@@ -50,7 +47,6 @@ h2, h3{
 } 
 
 .nav.navbar-nav{
-    /*float: right;*/
     padding-top: 17px;
 }
 
@@ -149,9 +145,7 @@ nav .container-fluid{
 
 
 .sections.container-fluid{
-    /*    width: 75%;*/
     max-width: 941px;
-    /*    max-width: 75%;*/
 } 
 
 
@@ -363,7 +357,6 @@ nav .container-fluid{
 }
 
 .contact-us img{
-/*    padding-right: 3px;*/
     padding-right: 1px;
 }
 
