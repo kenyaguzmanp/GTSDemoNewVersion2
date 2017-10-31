@@ -69,18 +69,25 @@ $(document).ready(function () {
         navBarTop = $("#navcon").height();
 //        console.log("alcontenttop " + navBarTop);
         $("#all-content").css("margin-top", navBarTop + "px");
-        if (windowWidth < 768) {
+        if (windowWidth < 768) {            
 //            console.log("window en modo responsive!");
             $("#navSec1, #navSec2, #navSec3").addClass("col-xs-4");
             $(".navBotton").on("click", function () {
                 console.log("le has dado click a wha we are");
+                var navBarToggleTop = $("#navcon").height();
                 var idSelected = $(this).attr("id");
-//                console.log("id selected: " + idSelected);
+                console.log("id selected: " + idSelected);
                 var sectionFromId = idSelected.slice(-1);
-//                console.log("seccion a: " + sectionFromId);
-                $('html,body').animate({
-                    scrollTop: $("#section" + sectionFromId).offset().top - navBarTop},
-                        'slow');
+                console.log("section selected: " + sectionFromId);
+                if($("#section" + sectionFromId).length === 0){
+                    console.log("seccion no en la landing page");
+                    window.location.href = "careers.html";
+                }else{
+                   $('html,body').animate({
+                    scrollTop: $("#section" + sectionFromId).offset().top - navBarToggleTop},
+                        'slow'); 
+                }
+                
 
             });
         } else {
