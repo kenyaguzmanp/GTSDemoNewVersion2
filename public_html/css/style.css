@@ -470,8 +470,12 @@ body > div {
     padding-bottom: 30px;
 }
 
-#whoWeAreTitle{
+#whoWeAreTitle, #benefitTitle, #jobTile{
     padding-bottom: 10px;
+    }
+    
+    #jobTitle{
+        text-align: left;
     }
 
 
