@@ -286,6 +286,10 @@ nav .container-fluid{
     padding-top: 112px;
 }
 
+.left-control2 img, .right-control2 img{
+   width: 30px; 
+}
+
 .news{
     background-color: white;
     padding: 30px 70px 30px 70px;
@@ -442,7 +446,7 @@ body > div {
 }
 
 #mary{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .sections{
