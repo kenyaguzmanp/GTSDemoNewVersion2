@@ -256,10 +256,13 @@ nav .container-fluid{
 
 
 
-#leaderPic, #log-flag, #log-circles2{
+#leaderPic, #log-flag, #log-circles2, #benefitBanner{
     max-width: 100%;
 }
 
+#benefitBanner img{
+    max-width: 100%;
+}
 
 .contact-us{
     background-image: url('fondo-contact_06.png');
@@ -521,6 +524,10 @@ body > div {
     }
     .nav.navbar-nav {
      padding-top: 0px; 
+    }
+    
+    table{
+        font-size: 11px;
     }
 
 }
