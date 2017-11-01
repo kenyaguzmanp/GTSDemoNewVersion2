@@ -41,20 +41,18 @@ $(document).ready(function () {
     
     var windowWidth = $(window).width();
     var navBarTop = $("#navcon").height();
-    $(".navBotton").on("click", function () {
+    $(".navBotton, #linkNav7").on("click", function () {
         var idSelected = $(this).attr("id");
-//        console.log("id selected: " + idSelected);
+        console.log("id selected: " + idSelected);
         var sectionFromId = idSelected.slice(-1);
         $('#dropDownMenu' + sectionFromId).addClass('animated fadeIn');
-        if (windowWidth >= 768) {
+        if (windowWidth >= 768 && $("#section" + sectionFromId).length !== 0) {
 //            console.log("le has dado click a wha we are");
 //            console.log("seccion a: " + sectionFromId);
             $('html,body').animate({
                 scrollTop: $("#section" + sectionFromId).offset().top - navBarTop},
                     'slow');
         }
-
-
     });
 
     addClassToNavBar(windowWidth);

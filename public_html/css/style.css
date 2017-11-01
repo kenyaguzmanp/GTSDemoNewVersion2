@@ -498,10 +498,16 @@ body > div {
     .dropdown-menu>li>a {
     font-size: 1.2vw;
     }
-
     
+    .navig{
+       padding: 0px 50px 20px 50px;
+    }
     
-
+    #leaderText{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
 
 }
 
