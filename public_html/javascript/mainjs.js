@@ -1,6 +1,4 @@
-$(document).ready(function () {
-//    console.log("ready!");
-    
+$(document).ready(function () {   
     //Carousel
     //Function to animate slider captions 
 	function doAnimations( elems ) {
@@ -43,12 +41,9 @@ $(document).ready(function () {
     var navBarTop = $("#navcon").height();
     $(".navBotton, #linkNav7, #linkNav8").on("click", function () {
         var idSelected = $(this).attr("id");
-        console.log("id selected: " + idSelected);
         var sectionFromId = idSelected.slice(-1);
         $('#dropDownMenu' + sectionFromId).addClass('animated fadeIn');
         if (windowWidth >= 768 && $("#section" + sectionFromId).length !== 0) {
-//            console.log("le has dado click a wha we are");
-//            console.log("seccion a: " + sectionFromId);
             $('html,body').animate({
                 scrollTop: $("#section" + sectionFromId).offset().top - navBarTop},
                     'slow');
@@ -58,27 +53,20 @@ $(document).ready(function () {
     addClassToNavBar(windowWidth);
 
     $(window).resize(function () {
-//        console.log("rezise the window!");
         windowWidth = $(window).width();
         addClassToNavBar(windowWidth);
     });
 
     function addClassToNavBar(windowWidth) {
         navBarTop = $("#navcon").height();
-//        console.log("alcontenttop " + navBarTop);
         $("#all-content").css("margin-top", navBarTop + "px");
         if (windowWidth < 768) {            
-//            console.log("window en modo responsive!");
             $("#navSec1, #navSec2, #navSec3").addClass("col-xs-4");
             $(".navBotton").on("click", function () {
-                console.log("le has dado click a wha we are");
                 var navBarToggleTop = $("#navcon").height();
                 var idSelected = $(this).attr("id");
-                console.log("id selected: " + idSelected);
                 var sectionFromId = idSelected.slice(-1);
-                console.log("section selected: " + sectionFromId);
                 if($("#section" + sectionFromId).length === 0){
-                    console.log("seccion no en la landing page");
                     window.location.href = "careers.html";
                 }else{
                    $('html,body').animate({
