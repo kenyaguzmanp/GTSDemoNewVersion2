@@ -21,7 +21,7 @@ $(document).ready(function () {
 		$firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
 		
 	//Initialize carousel 
-	$myCarousel.carousel();
+	$myCarousel.carousel({interval: 3000});
 	
 	//Animate captions in first slide on page load 
 	doAnimations($firstAnimatingElems);
@@ -41,7 +41,7 @@ $(document).ready(function () {
     
     var windowWidth = $(window).width();
     var navBarTop = $("#navcon").height();
-    $(".navBotton, #linkNav7").on("click", function () {
+    $(".navBotton, #linkNav7, #linkNav8").on("click", function () {
         var idSelected = $(this).attr("id");
         console.log("id selected: " + idSelected);
         var sectionFromId = idSelected.slice(-1);
@@ -96,7 +96,7 @@ $(document).ready(function () {
     $("#myCarousel3").carousel({
         interval: false
     });
-       
+    
  
 });
 
