@@ -480,6 +480,11 @@ body > div {
     #jobTitle{
         text-align: left;
     }
+    
+    #section7{
+        padding-top: 9px;
+        padding-bottom: 1px;
+    }    
 
 
 /* **************************************************************************************/
